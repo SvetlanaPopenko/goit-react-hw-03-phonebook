@@ -19,7 +19,7 @@ const schema = yup.object().shape({
       /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/,
       "Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
     ),
-  number: yup.string().phone('UA').required(),
+  number: yup.string().phone().required(),
 });
 
 const initialValues = {
